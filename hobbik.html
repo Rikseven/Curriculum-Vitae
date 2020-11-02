@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Önéletrajz</title>
+    <link rel="stylesheet" href="../CV/css/style2.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;1,100;1,200&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+            <header>
+            <nav>
+                <a href="index.html">Főoldal</a>
+                <a href="szakmai.html">Szakmai tapasztalat</a>
+                <a href="tanulmanyok.html">Tanulmányok</a>
+                <a href="keszseg.html">Készségek</a>
+                <a href="hobbik.html">Hobbik</a>
+                <a href="hobbies.html"><img id="enflag" src="../CV/pics/enflag.png" alt="British flag"></a>
+                <a href="hobbik.html"><img id="hunflag" src="../CV/pics/flaghu.jpg" alt="Hungarian flag"></a>
+                
+            </nav>
+            </header>
+            <main>
+                <section class="section-1">
+                    <h1>Zene</h1>
+                    <div class="left-box">Több, mint 25 éve kezdtem el gitározni. 2001-től házi stúdiómban rögzítem a saját szerzeményeimet és feldolgozásokat, melyeket Cubase és Reaper programokkal vágok és masterelek.
+                    </div>
+                    <div class="right-box">
+                       <p>Fading memories (2020)</p>
+                        <audio controls>
+                            <source src="../CV/music/01Fading memories.mp3" type="audio/mp3" title='Fading memories'>
+                        </audio>
+                        <p>Welcome (2001)</p>
+                        <audio controls>
+                            <source src="../CV/music/02Welcome.mp3" type="audio/mp3" title='Fading memories'>
+                        </audio>
+                        <p>Mirror room (2001)</p>
+                        <audio controls>
+                            <source src="../CV/music/03Mirror room.mp3" type="audio/mp3" title='Fading memories'>
+                        </audio>
+                        <p>Helloween (2001)</p>
+                        <audio controls>
+                            <source src="../CV/music/04Helloween.mp3" type="audio/mp3" title='Fading memories'>
+                        </audio>
+                        <p>Liberty (cover - 2001)</p>
+                        <audio controls>
+                            <source src="../CV/music/05Liberty.mp3" type="audio/mp3" title='Fading memories'>
+                        </audio>
+                        <p>Sound of the ocean (2001)</p>
+                        <audio controls>
+                            <source src="../CV/music/06Sound of the ocean.mp3" type="audio/mp3" title='Fading memories'>
+                        </audio>
+                        <p>Love thing (cover - 2001)</p>
+                        <audio controls>
+                            <source src="../CV/music/07Love thing.mp3" type="audio/mp3" title='Fading memories'>
+                        </audio>
+                        <p>Saintro (2001)</p>
+                        <audio controls>
+                            <source src="../CV/music/08Saintro.mp3" type="audio/mp3" title='Fading memories'>
+                        </audio>
+                        <p>Flowing (2001)</p>
+                        <audio controls>
+                            <source src="../CV/music/09Flowing.mp3" type="audio/mp3" title='Fading memories'>
+                        </audio>
+                        <p>Wild horses (cover - 2001)</p>
+                        <audio id="lastaudio" controls>
+                            <source src="../CV/music/10Wild horses.mp3" type="audio/mp3" title='Fading memories'>
+                        </audio>
+                    </div>
+                </section>
+                <section class="section-2">
+                    <h1>Festés</h1>
+                    <p>Szabadidőmben gyakran szoktam festeni akril festékkel vászonra változatos technikák felhasználásával.</p>
+                    <div class="slidercontainer">  
+                        <div class="showSlide fade">  
+                            <img id="horse" src="../CV/paintings/horse1.jpg" />  
+                        </div>  
+                        <div class="showSlide fade">  
+                            <img src="../CV/paintings/milkyway1.jpg" />  
+                        </div>  
+                        <div class="showSlide fade">  
+                            <img src="../CV/paintings/tree1.jpg" />    
+                        </div>  
+                        <div class="showSlide fade">  
+                            <img src="../CV/paintings/woman01.jpg" />   
+                        </div>  
+                        <div class="showSlide fade">  
+                            <img src="../CV/paintings/sea1.jpg" />   
+                        </div>  
+                        <div class="showSlide fade">  
+                            <img src="../CV/paintings/wintermount1.jpg" />   
+                        </div>  
+                        <div class="showSlide fade">  
+                            <img src="../CV/paintings/trees1.jpg" />   
+                        </div>  
+                        <!-- Navigation arrows -->  
+                        <a class="left-slide" onclick="nextSlide(-1)">❮</a>  
+                        <a class="right-slide" onclick="nextSlide(1)">❯</a>  
+                    </div>  
+                  
+                    <script type="text/javascript">  
+                        var slide_index = 1;  
+                            displaySlides(slide_index);  
+                                      
+                        function nextSlide(n) {  
+                            displaySlides(slide_index += n);  
+                        }  
+                                      
+                        function currentSlide(n) {  
+                            displaySlides(slide_index = n);  }  
+                                      
+                        function displaySlides(n) {  
+                            var i;  
+                            var slides = document.getElementsByClassName("showSlide");  
+                            if (n > slides.length) { slide_index = 1 }  
+                            if (n < 1) { slide_index = slides.length }  
+                            for (i = 0; i < slides.length; i++) {  
+                                slides[i].style.display = "none";  
+                                                }  
+                            slides[slide_index - 1].style.display = "block";  
+                                            }  
+                    </script>  
+                </section>
+                
+                <!--<section class="section-3">
+                    <h1>Kutya</h1>
+                </section>-->
+               
+                
+            </body>
+            </html>

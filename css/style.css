@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+}
+.wrapper {
+    max-width: 1300px;
+    margin: 0px auto;
+    display: grid;
+ }
+body{
+    box-sizing: border-box;
+    background-image: url(../pics/Background01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    background-color: rgb(77, 79, 83);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    display: grid;
+}
+n
+#portrait {
+    width: 30px;
+    height: auto;
+}
+#hunflag {
+    width: 30px;
+    height: auto;
+    float: right; 
+    padding: 0px 5px;
+}
+#enflag {
+    width: 30px;
+    height: 20px;
+    float: right;
+    padding: 0px 5px;
+}
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 600;
+    color: blanchedalmond;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:nth-child(1):hover{
+    background-color: rgb(108, 105, 116);
+    box-shadow: 0 0 10px gray;
+}
+nav a:nth-child(2):hover{
+    background-color: rgb(108, 105, 116);
+    box-shadow: 0 0 10px gray;
+}
+nav a:nth-child(3):hover{
+    background-color: rgb(108, 105, 116);
+    box-shadow: 0 0 10px gray;
+}
+nav a:nth-child(4):hover{
+    background-color: rgb(108, 105, 116);
+    box-shadow: 0 0 10px gray;
+}
+nav a:nth-child(5):hover{
+    background-color: rgb(108, 105, 116);
+    box-shadow: 0 0 10px gray;
+}
+
+nav #enflag:hover {
+    box-shadow: none;
+    background-color: none;
+}
+.container {
+    display: grid;
+    grid-template-columns: 350px auto;
+}
+.left{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+    color: #222222;
+    padding: 40px 0 0 60px;
+    background-color: #998d7a;
+    float: left;
+}
+.left::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+div .left #portrait {
+    width: 200px;
+    height: auto;
+    padding: 0 0 30px 0;
+}
+div .left #locimg {
+    width: 20px;
+    height: auto;
+    float: left;
+    padding: 0 10px 0 0;
+}
+div .left #phoneimg {
+    width: 20px;
+    height: auto;
+    float: left;
+    padding: 0 10px 0 0;
+}
+div .left #emailimg {
+    width: 20px;
+    height: auto;
+    float: left;
+    padding: 0 10px 0 0;
+}
+div .left #birthimg {
+    width: 20px;
+    height: auto;
+    float: left;
+    padding: 0 10px 0 0;
+}
+.right{
+    background-color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    color: #D8AD5D;
+    padding: 40px;
+}
+.right h1 {
+    color: #D8AD5D;
+    padding: 0 0 20px 0;
+}
+.right p {
+    text-align: justify;
+}

@@ -1,0 +1,211 @@
+
+* {
+    margin: 0;
+    padding: 0
+}
+body{
+    box-sizing: border-box;
+}
+header{
+    max-width: 1300px;
+    margin: 0px auto;
+    background-color: rgb(77, 79, 83);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: grid;
+    z-index: 1;
+}
+#hunflag {
+    width: 30px;
+    height: auto;
+    float: right; 
+    padding: 0px 5px;
+}
+#enflag {
+    width: 30px;
+    height: 20px;
+    float: right;
+    padding: 0px 5px;
+}
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 600;
+    color: blanchedalmond;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:nth-child(1):hover{
+    background-color: rgb(108, 105, 116);
+    box-shadow: 0 0 10px gray;
+}
+nav a:nth-child(2):hover{
+    background-color: rgb(108, 105, 116);
+    box-shadow: 0 0 10px gray;
+}
+nav a:nth-child(3):hover{
+    background-color: rgb(108, 105, 116);
+    box-shadow: 0 0 10px gray;
+}
+nav a:nth-child(4):hover{
+    background-color: rgb(108, 105, 116);
+    box-shadow: 0 0 10px gray;
+}
+nav a:nth-child(5):hover{
+    background-color: rgb(108, 105, 116);
+    box-shadow: 0 0 10px gray;
+}
+
+nav #enflag:hover {
+    box-shadow: none;
+    background-color: none;
+}
+html, body, main {
+    height: 100%
+}
+section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100%;
+    position: relative
+}
+.section-1 { background-image: url('../pics/music_bg.jpg') }
+.section-2 { background-image: url('../pics/art_bg.png') }
+.section-3 { background-image: url('pics/section3.jpg') }
+.section-4 { background-image: url('pics/section4.jpg') }
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4vw;
+    color: white;
+    background: rgba(0,0,0,.7);
+    padding: 20px 40px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px
+}
+.section-1{
+    display: flex;
+    justify-content: center;
+}
+main .section-1 .left-box{
+    display: flex;
+    position: auto;
+    border: solid 1px gray;
+    padding: 60px 60px 90px 60px;
+    display: inline-block;
+    max-width: 400px;
+    max-height: 170px;
+    margin: 130px 50px 0 50px;
+    background-color: #222222;
+    font-family: 'Montserrat', sans-serif;
+    color: #998d7a;
+    font-size: 22px;
+    text-align: justify;
+    line-height: 30px;
+}
+main .section-1 .right-box{
+    display: flex;
+    justify-content: center;
+    border: solid 1px gray;
+    padding: 40px 60px 80px 60px;
+    display: inline-block;
+    max-width: 400px;
+    margin: 130px 50px 0 50px;
+    max-height: 200px;
+    background-color: #998d7a;
+    overflow-y: scroll;
+}
+main .section-1 .right-box #lastaudio{
+    padding: 0 0 40px 0;
+}
+main .section-2 p {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0 50px 0;
+    font-size: 25px;
+}
+main p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media(max-width:600px) {
+    section {
+        background-attachment: scroll;
+        height: 250px
+    }
+    h1 {
+        bottom: 20px;
+        right: 20px;
+        padding: 15px 30px
+    }
+    .section .left-box{
+    display: block;
+    }
+    .selection .right-box{
+    display: block;
+    }
+}
+.showSlide {  
+    display: none  
+}  
+    .showSlide img {  
+        width: 100%;  
+    }  
+.slidercontainer {  
+    max-width: 450px;  
+    position: relative;  
+    margin: auto;  
+    padding: 60px auto;
+}  
+.left-slide, .right-slide {  
+    cursor: pointer;  
+    position: absolute;  
+    top: 50%;  
+    width: auto;  
+    padding: 16px;  
+    margin-top: -22px;  
+    color: white;  
+    font-weight: bold;  
+    font-size: 18px;  
+    transition: 0.6s ease;  
+    border-radius: 0 3px 3px 0;  
+}  
+.right-slide {  
+    right: 0;  
+    border-radius: 3px 0 0 3px;  
+}  
+    .left-slide:hover, .right-slide:hover {  
+        background-color: rgba(115, 115, 115, 0.8);  
+    }   
+.active {  
+    background-color: #717171;  
+}  
+/* Fading animation */  
+.fade {  
+    -webkit-animation-name: fade;  
+    -webkit-animation-duration: 1.5s;  
+    animation-name: fade;  
+    animation-duration: 1.5s;  
+}  
+@-webkit-keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+}  
+
+@keyframes fade {  
+    from {  
+        opacity: .4  
+    }  
+    to {  
+        opacity: 1  
+    }  
+} 
